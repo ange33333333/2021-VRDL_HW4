@@ -13,8 +13,8 @@
     "datasets": {
         "train": {
             "mode": "LRHR",
-            "dataroot_HR": "C:/Users/ange3/OneDrive/Desktop/基於深度學習之視覺辦識專論/HW4/training_lr_images/DIV2K_train_HR_aug/x3",
-            "dataroot_LR": "C:/Users/ange3/OneDrive/Desktop/基於深度學習之視覺辦識專論/HW4/training_lr_images/DIV2K_train_LR_aug/x3",
+            "dataroot_HR": "./training_lr_images/DIV2K_train_HR_aug/x3",
+            "dataroot_LR": "./training_lr_images/DIV2K_train_LR_aug/x3",
             "data_type": "npy",
             "n_workers": 4,
             "batch_size": 16,
