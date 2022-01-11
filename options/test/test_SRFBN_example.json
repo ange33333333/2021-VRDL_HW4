@@ -13,7 +13,7 @@
     "datasets": {
         "test_set1": {
              "mode": "LR",
-             "dataroot_LR": "./results/LR/MyImage",
+             "dataroot_LR": "./dataset/testing_lr_images",
              "data_type": "img"
          }
     },
@@ -28,6 +28,6 @@
     },
 
     "solver": {
-        "pretrained_path": "./models/best_ckp.pth"
+        "pretrained_path": "./experiments/SRFBN_in3f128_x3/epochs/best_ckp.pth"
     }
 }
