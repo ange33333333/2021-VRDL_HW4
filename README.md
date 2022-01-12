@@ -75,4 +75,4 @@ $ python test.py -opt options/test/test_SRFBN_example.json
 
 ## Reference
 
-- https://github.com/Paper99/SRFBN_CVPR19https://github.com/Paper99/SRFBN_CVPR19
+- https://github.com/Paper99/SRFBN_CVPR19
