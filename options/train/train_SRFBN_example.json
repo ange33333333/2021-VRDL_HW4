@@ -13,11 +13,11 @@
     "datasets": {
         "train": {
             "mode": "LRHR",
-            "dataroot_HR": "./training_lr_images/DIV2K_train_HR_aug/x3",
-            "dataroot_LR": "./training_lr_images/DIV2K_train_LR_aug/x3",
+            "dataroot_HR": "./dataset/training_hrlr_images/DIV2K_train_HR_aug/x3",
+            "dataroot_LR": "./dataset/training_hrlr_images/DIV2K_train_LR_aug/x3",
             "data_type": "npy",
             "n_workers": 4,
-            "batch_size": 16,
+            "batch_size": 32,
             "LR_size": 12,
             "use_flip": true,
             "use_rot": true,
@@ -25,8 +25,8 @@
         },
         "val": {
             "mode": "LRHR",
-            "dataroot_HR": "./results/HR/Set5/x3",
-            "dataroot_LR": "./results/LR/LRBI/Set5/x3",
+            "dataroot_HR": "./dataset/training_hrlr_images/val_HR_aug",
+            "dataroot_LR": "./dataset/training_hrlr_images/val_LR_aug",
             "data_type": "img"
         }
     },
@@ -42,14 +42,14 @@
 
     "solver": {
         "type": "ADAM",
-        "learning_rate": 0.0001,
-        "weight_decay": 0,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.00001,
         "lr_scheme": "MultiStepLR",
-        "lr_steps": [200, 400, 600, 800],
+        "lr_steps": [200, 400, 600, 800, 1000],
         "lr_gamma": 0.5,
         "loss_type": "l1",
         "manual_seed": 0,
-        "num_epochs": 1000,
+        "num_epochs": 1200,
         "skip_threshold": 3,
         "split_batch": 1,
         "save_ckp_step": 50,
