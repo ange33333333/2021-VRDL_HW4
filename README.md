@@ -40,7 +40,6 @@ Data
        +- 01.png
        +- 02.png
        ...
-   ...
 ```
 
 ## Data Preprocessing
@@ -71,7 +70,7 @@ You need to download models, and put them at ./experiments/SRFBN_in3f128_x3/epoc
 You can get the predict result by following:
 
 ```test
-python test.py -opt options/test/test_SRFBN_example.json
+$ python test.py -opt options/test/test_SRFBN_example.json
 ```
 
 ## Reference
